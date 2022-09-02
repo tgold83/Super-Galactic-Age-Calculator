@@ -5,4 +5,24 @@ export default class YearCalc {
     this.hairColor = hairColor;
     this.shoeSize = shoeSize;
   }
+
+  // mercuryYear(age) {
+
+  // }
+
+  // venusYear(age) {
+
+  // }
+
+  // marsYear(age) {
+
+  // }
+
+  // jupiterYear(age) {
+
+  // }
+
+  // lifeExpect() {
+
+  // }
 }
