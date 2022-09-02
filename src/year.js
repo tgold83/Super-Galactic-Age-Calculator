@@ -90,7 +90,6 @@ export default class YearCalc {
       marsLifeLeft: Math.abs(marsLife - mars),
       jupiterLifeLeft: Math.abs(jupiterLife - jupiter)
     }
-   
     return lifeLeft;
   }
 }
