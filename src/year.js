@@ -10,9 +10,9 @@ export default class YearCalc {
     return this.age / .24;
   }
 
-  // venusAge() {
-
-  // }
+  venusAge() {
+    return this.age / .62;
+  }
 
   // marsAge() {
 
