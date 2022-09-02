@@ -21,4 +21,8 @@ describe('YearCalc', () => {
   test('should convert the users age to years on Venus', () => {
     expect(yearCalc.venusAge()).toEqual(32 / .62);
   });
+
+  test('should convert the users age to years on Mars', () => {
+    expect(yearCalc.marsAge()).toEqual(32 / 1.88);
+  });
 });
