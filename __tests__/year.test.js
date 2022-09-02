@@ -56,4 +56,8 @@ describe('YearCalc', () => {
       mars: 93 / 1.88,
       jupiter: 93 / 11.86});
   });
+
+  test('should take age on each planet and store in a variable', () => {
+    expect(earthLife).toEqual(this.age)
+  })
 });
