@@ -57,12 +57,12 @@ describe('YearCalc', () => {
       jupiter: 93 / 11.86});
   });
 
-  test('should return life left on Earth, Mercury, Venus, Mars, and Jupiter', () => {  
+  test('should return life left on Earth, Mercury, Venus, Mars, and Jupiter as a positive value', () => {  
     expect(yearCalc.lifeLeft()).toEqual({
-      earthLifeLeft: 32 - 93,
-      mercuryLifeLeft: 32 / .24 - 93 / .24,
-      venusLifeLeft: 32 / .62 - 93 / .62,
-      marsLifeLeft: 32 / 1.88 - 93 / 1.88,
-      jupiterLifeLeft: 32 / 11.86 - 93 / 11.86});
+      earthLifeLeft: 93 - 32,
+      mercuryLifeLeft: 93 / .24 - 32 / .24,
+      venusLifeLeft: 93 / .62 - 32 / .62,
+      marsLifeLeft: 93 / 1.88 - 32 / 1.88,
+      jupiterLifeLeft: 93 / 11.86 - 32 / 11.86});
   })
 });
