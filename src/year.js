@@ -6,63 +6,72 @@ export default class YearCalc {
     this.shoeSize = shoeSize;
   }
 
-  mercuryAge() {
-    return this.age / .24;
+  mercuryAge(earthYears) {
+    return earthYears / .24;
   }
 
-  venusAge() {
-    return this.age / .62;
+  venusAge(earthYears) {
+    return earthYears / .62;
   }
 
-  marsAge() {
-    return this.age / 1.88
+  marsAge(earthYears) {
+    return earthYears / 1.88
   }
 
-  jupiterAge() {
-    return this.age / 11.86
+  jupiterAge(earthYears) {
+    return earthYears / 11.86
   }
 
    lifeExpect() {
-    let lifeExpectancy = 100
+    let earthLifeExpect = 100
     
     if (this.heightInches <= 60) {
-      lifeExpectancy += 7;
+      earthLifeExpect += 7;
     } else {
-      lifeExpectancy -= 7;
+      earthLifeExpect -= 7;
     }
     
     if (this.shoeSize <= 8) {
-      lifeExpectancy += 10;
+      earthLifeExpect += 10;
     } else {
-      lifeExpectancy -= 5;
+      earthLifeExpect -= 5;
     }
 
     switch(this.hairColor) {
       case "brown":
-        lifeExpectancy += 5;
+        earthLifeExpect += 5;
         break;
       case "black":
-        lifeExpectancy -= 5;
+        earthLifeExpect -= 5;
         break;
       case "blonde":
-        lifeExpectancy += 10;
+        earthLifeExpect += 10;
         break;
       case "red":
-        lifeExpectancy -= 10;
+        earthLifeExpect -= 10;
         break;
       case "grey":
-        lifeExpectancy -= 25;
+        earthLifeExpect -= 25;
         break;
       case "white":
-        lifeExpectancy -= 30;
+        earthLifeExpect -= 30;
         break;
       case "bald":
-        lifeExpectancy -= 15;
+        earthLifeExpect -= 15;
         break;
       default:
-        lifeExpectancy = 0;
+        earthLifeExpect = 0;
         break;
     }
+    
+      const lifeExpectancy = {
+      earth: earthLifeExpect
+      // mercury: this.mercuryAge(earthLifeExpect),
+      // venus: this.venusAge(earthLifeExpect),
+      // mars: this.marsAge(earthLifeExpect),
+      // jupiter: this.jupiterAge(earthLifeExpect)
+    };
+
     return lifeExpectancy;
    }
 }
