@@ -84,11 +84,11 @@ export default class YearCalc {
     let jupiterLife = this.jupiterAge(this.age);
     
     const lifeLeft = {
-      earthLifeLeft: earthLife - earth,
-      mercuryLifeLeft: mercuryLife - mercury,
-      venusLifeLeft: venusLife - venus,
-      marsLifeLeft: marsLife - mars,
-      jupiterLifeLeft: jupiterLife - jupiter
+      earthLifeLeft: Math.abs(earthLife - earth),
+      mercuryLifeLeft: Math.abs(mercuryLife - mercury),
+      venusLifeLeft: Math.abs(venusLife - venus),
+      marsLifeLeft: Math.abs(marsLife - mars),
+      jupiterLifeLeft: Math.abs(jupiterLife - jupiter)
     }
    
     return lifeLeft;
