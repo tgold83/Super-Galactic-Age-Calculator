@@ -15,6 +15,6 @@ describe('YearCalc', () => {
   }); 
 
   test('should convert the users age to years on Mercury', () => {
-    expect(yearCalc.mercuryYear).toEqual(32 / .24);
+    expect(yearCalc.mercuryAge).toEqual(32 / .24);
   });
 });

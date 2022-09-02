@@ -6,19 +6,19 @@ export default class YearCalc {
     this.shoeSize = shoeSize;
   }
 
-  // mercuryYear(age) {
+  mercuryAge() {
+    return this.age / .24;
+  }
+
+  // venusAge() {
 
   // }
 
-  // venusYear(age) {
+  // marsAge() {
 
   // }
 
-  // marsYear(age) {
-
-  // }
-
-  // jupiterYear(age) {
+  // jupiterAge() {
 
   // }
 
