@@ -75,21 +75,5 @@ export default class YearCalc {
     return lifeExpectancy;
    }
 
-  lifeLeft() {
-    const {earth, mercury, venus, mars, jupiter} = this.lifeExpect();
-    let earthLife = this.age
-    let mercuryLife = this.mercuryAge(this.age);
-    let venusLife = this.venusAge(this.age);
-    let marsLife = this.marsAge(this.age);
-    let jupiterLife = this.jupiterAge(this.age);
-    
-    const lifeLeft = {
-      earth: earthLife - earth,
-      mercury: mercurylife - mercury,
-      venus: venuslife - venus,
-      mars: marslife - mars,
-      jupiter: jupiterlife - jupiter
-    }
-    return lifeLeft;
-    }
+  
 }

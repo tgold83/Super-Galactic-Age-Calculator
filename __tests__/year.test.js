@@ -57,7 +57,12 @@ describe('YearCalc', () => {
       jupiter: 93 / 11.86});
   });
 
-  test('should take age on each planet and store in a variable', () => {
-    expect(earthLife).toEqual(this.age)
+  test('should return life left on Earth, Mercury, Venus, Mars, and Jupiter', () => {  
+    expect(yearCalc.lifeLeft()).toEqual({
+      earth: 93 - 32,
+      mercury: (93 - 32) / .24,
+      venus: (93 - 32) / .62,
+      mars: (93 - 32) / 1.88,
+      jupiter: (93 - 32) / 11.86});
   })
 });
