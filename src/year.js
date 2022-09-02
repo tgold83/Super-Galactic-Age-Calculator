@@ -18,9 +18,9 @@ export default class YearCalc {
     return this.age / 1.88
   }
 
-  // jupiterAge() {
-
-  // }
+  jupiterAge() {
+    return this.age / 11.86
+  }
 
   // lifeExpect() {
 
