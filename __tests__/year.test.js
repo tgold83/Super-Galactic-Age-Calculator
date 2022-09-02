@@ -30,7 +30,21 @@ describe('YearCalc', () => {
     expect(yearCalc.jupiterAge()).toEqual(32 / 11.86);
   });
 
-  test('should return life expectancy on Earth using a users inputted age, heightInches, hairColor, and shoeSize', () => {
+  test('should return life expectancy on Earth using a users inputted heightInches, hairColor, and shoeSize', () => {
     expect(yearCalc.lifeExpect()).toEqual(93);
+    yearCalc = new YearCalc(32, 59, "black", 7);
+    expect(yearCalc.lifeExpect()).toEqual(112);
+    yearCalc = new YearCalc(32, 59, "blonde", 7);
+    expect(yearCalc.lifeExpect()).toEqual(127);
+    yearCalc = new YearCalc(32, 59, "red", 7);
+    expect(yearCalc.lifeExpect()).toEqual(107);
+    yearCalc = new YearCalc(32, 59, "grey", 7);
+    expect(yearCalc.lifeExpect()).toEqual(92);
+    yearCalc = new YearCalc(32, 59, "white", 7);
+    expect(yearCalc.lifeExpect()).toEqual(87);
+    yearCalc = new YearCalc(32, 59, "bald", 7);
+    expect(yearCalc.lifeExpect()).toEqual(102);
+    yearCalc = new YearCalc(32, 59, "purple", 7);
+    expect(yearCalc.lifeExpect()).toEqual(0);
   });
 });
