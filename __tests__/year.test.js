@@ -15,6 +15,10 @@ describe('YearCalc', () => {
   }); 
 
   test('should convert the users age to years on Mercury', () => {
-    expect(yearCalc.mercuryAge).toEqual(32 / .24);
+    expect(yearCalc.mercuryAge()).toEqual(32 / .24);
+  });
+
+  test('should convert the users age to years on Venus', () => {
+    expect(yearCalc.venusAge()).toEqual(32 / .62);
   });
 });
