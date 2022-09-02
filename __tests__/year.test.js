@@ -59,10 +59,10 @@ describe('YearCalc', () => {
 
   test('should return life left on Earth, Mercury, Venus, Mars, and Jupiter', () => {  
     expect(yearCalc.lifeLeft()).toEqual({
-      earth: 93 - 32,
-      mercury: (93 - 32) / .24,
-      venus: (93 - 32) / .62,
-      mars: (93 - 32) / 1.88,
-      jupiter: (93 - 32) / 11.86});
+      earthLifeLeft: 32 - 93,
+      mercuryLifeLeft: 32 / .24 - 93 / .24,
+      venusLifeLeft: 32 / .62 - 93 / .62,
+      marsLifeLeft: 32 / 1.88 - 93 / 1.88,
+      jupiterLifeLeft: 32 / 11.86 - 93 / 11.86});
   })
 });
