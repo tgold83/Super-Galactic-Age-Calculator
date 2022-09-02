@@ -29,4 +29,8 @@ describe('YearCalc', () => {
   test('should convert the users age to years on Jupiter', () => {
     expect(yearCalc.jupiterAge()).toEqual(32 / 11.86);
   });
+
+  test('should return life expectancy on Earth using a users inputted age, heightInches, hairColor, and shoeSize', () => {
+    expect(yearCalc.lifeExpect()).toEqual(93);
+  });
 });
